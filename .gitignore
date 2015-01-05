@@ -1,2 +1,4 @@
 conf.d/config.php
 composer.lock
+vendor
+tmp

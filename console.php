@@ -24,13 +24,13 @@ if (!is_readable($loaderPath)) {
 $loader = include $loaderPath;
 
 // Set up class loading.
-$loader->add('Bssupervisor\Entity', __DIR__ . '/app/Entity/');
+$loader->add('Schematify\Entity', __DIR__ . '/Entity/');
 
 $debug = true;
 $config = new Configuration();
 
 // Set up Metadata Drivers
-$driverImpl = $config->newDefaultAnnotationDriver(array(__DIR__ . "/app/Entity"), false);
+$driverImpl = $config->newDefaultAnnotationDriver(array(__DIR__ . "/Entity"), false);
 $config->setMetadataDriverImpl($driverImpl);
 
 // Set up caches, depending on $debug variable.

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Table(name="users")
  */
-class User implements AppEntity
+class User 
 {
     /**
      * @ORM\Id

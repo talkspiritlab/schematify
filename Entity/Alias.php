@@ -5,13 +5,10 @@ namespace Schematify\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="Bssupervisor\Repository\DefaultRepository")
  * @ORM\Table(name="aliases")
  */
-class Alias {
-
-    use HelperEntity;
-
+class Alias 
+{
 
     /**
      * @ORM\Id
