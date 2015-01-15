@@ -20,7 +20,7 @@ class Alias
 
     /**
      * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumn(referencedColumnName="id",columnDefinition="INT(11) DEFAULT '1' NOT NULL")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     protected $user;
 

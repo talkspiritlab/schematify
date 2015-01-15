@@ -12,20 +12,20 @@ class User
 {
     /**
      * @ORM\Id
-     * @ORM\Column(type="integer",columnDefinition="INT(11) DEFAULT '1' NOT NULL")
+     * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      * @var int
      */
     protected $id;
 
-    /**
-     * @ORM\Column(length=250)
-     */
+    /** @ORM\Column(length=250) */
     protected $email = '';
 
-    /**
-     * @ORM\Column(length=32,options={"default":""})
-     */
+    /** @ORM\Column(length=32,options={"default":""}) */
     protected $pasword = '';
+
+    /** @ORM\Column(type="string", columnDefinition="ENUM('visible', 'invisible')") */
+    protected $status = '';
+
 
 }
